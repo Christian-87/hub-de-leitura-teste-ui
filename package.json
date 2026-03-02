@@ -18,7 +18,8 @@
     "url": "https://github.com/Christian-87/hub-de-leitura-teste-ui/issues"
   },
   "homepage": "https://github.com/Christian-87/hub-de-leitura-teste-ui#readme",
-  "dependencies": {
-    "cypress": "^15.10.0"
+  "devDependencies": {
+    "@faker-js/faker": "^10.3.0",
+    "cypress": "^15.11.0"
   }
 }

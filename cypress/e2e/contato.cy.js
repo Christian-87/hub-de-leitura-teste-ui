@@ -8,9 +8,6 @@ describe('Funcionalidade: Contato', () => {
 
   });
 
-
-
-
   it('Deve preencher formulario de contato com sucesso', () => {
 
     cy.get('[name="name"]').type('Joao Jose')
@@ -19,11 +16,12 @@ describe('Funcionalidade: Contato', () => {
     cy.get('[name="message"]').type('Mensagem de teste')
     cy.get('#btn-submit').click()
 
-    //Resultado Esperado it.only apenas testou os testes acima desse texto
+    //Resultado Esperado
     cy.contains('Contato enviado com sucesso!').should('exist')
 
   });
 
+  // it.only e usado para testar apenas o bloco com esse nome
   it('Deve validar mensagem de erro ao enviar sem preencher nome', () => {
 
     cy.get('[name="name"]').clear()
